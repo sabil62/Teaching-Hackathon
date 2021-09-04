@@ -1,6 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Up from "./container/up/up";
+import Maincontent from "./components/mainContent/mainContent";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <span>{">"}</span>
           <span>Course</span>
         </div>
-        {/* <MainContent /> */}
+        <Maincontent />
         <button className="btn btn-info">Test Button</button>
       </div>
     </div>
