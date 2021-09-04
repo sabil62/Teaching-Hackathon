@@ -1,0 +1,73 @@
+.greybox {
+  background-color: #e5e5e5;
+  border-radius: 3px;
+  padding: 10px 5px;
+  color: rgb(139, 136, 136);
+  margin-bottom: 1.6rem;
+  font-size: 13.4px;
+  font-weight: 600;
+}
+.greybox-up-title {
+  display: flex;
+  justify-content: space-between;
+}
+.greybox-left-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgb(110, 109, 109);
+}
+
+.greybox-right-title {
+  font-size: 14px;
+  padding-right: 10px;
+}
+.greybox-line {
+  height: 1px;
+  border: none;
+  background-color: rgb(235, 235, 235);
+  border-radius: 2px;
+}
+.dark {
+  background-color: rgb(194, 194, 194);
+}
+.show-content {
+  /* animation: showContent 3s ease-out; */
+  animation-name: showContent;
+  animation-duration: 0.16s;
+  animation-timing-function: ease-in-out;
+  padding: 10px;
+  padding-top: 1px;
+  padding-bottom: 24px;
+}
+
+@keyframes showContent {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  /* make this height as minium as possible */
+  100% {
+    height: 100px;
+    opacity: 1;
+  }
+}
+
+.lost-content {
+  animation: lostContent 0.16s ease-in-out;
+  padding: 10px;
+  padding-top: 1px;
+  height: 0px;
+  /* no need for this  */
+  transform: scale(0);
+}
+
+@keyframes lostContent {
+  0% {
+    height: 100px;
+    opacity: 0.5;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
