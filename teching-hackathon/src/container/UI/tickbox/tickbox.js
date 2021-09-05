@@ -1,5 +1,5 @@
 import React from "react";
-import "./tickmark.css";
+import "./tickbox.css";
 
 const tickmarks = (props) => {
   return (

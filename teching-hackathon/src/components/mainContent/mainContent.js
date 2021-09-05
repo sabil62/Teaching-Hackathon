@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LeftContent from "../leftcontent/leftcontent";
 import RightContent from "../rightcontent/rightcontent";
+import MiddleContent from "../middleContent/middlecontent";
 
 const Maincontent = () => {
   const [thingsTodo, setThingstodo] = useState([
@@ -22,7 +23,9 @@ const Maincontent = () => {
         <div className="col-lg-3 col-sm-4 col-12">
           <LeftContent thingsTodo={thingsTodo} />
         </div>
-        <div className="col-lg-6 col-sm-8 col-12">Middle</div>
+        <div className="col-lg-6 col-sm-8 col-12">
+          <MiddleContent />
+        </div>
         <div className="col-lg-3 d-lg-block d-none">
           <RightContent courseModule={courseModule} />
         </div>

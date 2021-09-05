@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./week.css";
+import "./weekbox.css";
 
 function WeekBoxs(props) {
   const [display, setDisplay] = useState(true);
